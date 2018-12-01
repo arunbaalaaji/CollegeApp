@@ -1,0 +1,55 @@
+<link href="/css/login.css" rel="stylesheet" type="text/css"/>
+<center>
+  <img src="/img/9.png" alt="user" width="100" height="100" >
+<h1>Details</h1>
+</center>
+  <a href="/student/index"><button type="button">Home</button></a>
+<center>
+<hr/>
+
+<h3>Welcome&nbsp;<%= @user.name %>
+<hr/>
+  <table cellspacing="0" cellpadding="10">
+  <tr>
+    <td>
+      <label><b>Admission no. </b></label>
+    </td>
+    <td>
+      <b><%= @user.admnno %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Name. </b></label>
+    </td>
+    <td>
+      <b><%= @user.name %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Rollno. </b></label>
+    </td>
+    <td>
+      <b><%= @user.rollno %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Gender </b></label>
+    </td>
+    <td>
+      <b><%= @user.gender %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Department </b></label>
+    </td>
+    <td>
+      <b><%= @user.dept %></b>
+    </td>
+  </tr>
+  </table>
+  <br/>
+</center>

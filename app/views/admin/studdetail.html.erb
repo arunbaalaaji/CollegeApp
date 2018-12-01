@@ -1,0 +1,64 @@
+<link href="/css/login.css" rel="stylesheet" type="text/css"/>
+<center>
+  <img src="/img/view.png" alt="user" width="100" height="100" >
+<h1>Details</h1>
+</center>
+  <a href="/admin/index"><button type="button">Home</button></a>
+<center>
+<hr/>
+<% for x in @stulist%><div class="container">
+  <table cellspacing="0" cellpadding="10">
+  <tr>
+    <td>
+      <label><b>Admission no. </b></label>
+    </td>
+    <td>
+      <b><%= x.admnno %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Name. </b></label>
+    </td>
+    <td>
+      <b><%= x.name %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Rollno. </b></label>
+    </td>
+    <td>
+      <b><%= x.rollno %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Gender </b></label>
+    </td>
+    <td>
+      <b><%= x.gender %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Department </b></label>
+    </td>
+    <td>
+      <b><%= x.dept %></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><b>Password </b></label>
+    </td>
+    <td>
+      <b><%= x.password %></b>
+    </td>
+  </tr>
+  </table>
+  <br/>
+  <hr/>
+<% end %>
+<%= will_paginate @stulist %>
+</center>

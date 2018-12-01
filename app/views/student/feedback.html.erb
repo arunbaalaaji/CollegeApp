@@ -1,0 +1,34 @@
+<style>
+ td{
+   padding:10px 30px;
+   }
+</style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<link href="/css/login.css" rel="stylesheet" type="text/css"/>
+<center>
+  <img src="/img/feed.jpg" alt="user" width="100" height="100" >
+  <h1>FeedBack</h1>
+  </center>
+  <a href="/student/index"><button type="button">Home</button></a>
+<hr/>
+<h3>Welcome&nbsp;<%= @user.name %>
+<hr/>
+<div class="w3-container">
+<form action="/student/feedbackaction" method="get">
+  <center>
+  <table cellpadding="10" cellspacing="0">
+    <tr>
+      <th>Your FeedBack:</th>
+    <td><textarea rows="15" cols="100" placeholder="Suggestions"></textarea></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td></td>
+    <center><td><button type="submit" name="submit">Send</button></td></center>
+  </tr>
+ </table>
+  </center>
+  </form>
+</div>

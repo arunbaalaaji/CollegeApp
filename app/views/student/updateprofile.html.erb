@@ -1,0 +1,53 @@
+<link href="/css/login.css" rel="stylesheet" type="text/css"/>
+<center>
+  <img src="/img/edit.png" alt="user" width="100" height="100" >
+  <h1>Update Profile</h1>
+</center>
+  <a href="/student/index"><button type="button">Home</button></a>
+<hr/>
+
+<center>
+<form action="/student/updateprofileaction" method="get">
+  <div class="container">
+  <table cellspacing="0" cellpadding="10">
+  <tr>
+    <td>
+      <label><b>Name </b></label>
+    </td>
+    <td>
+      <input type="text" placeholder="Enter name  " name="name" required>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label><b>Roll Number </b></label>
+    </td>
+    <td>
+      <input type="text" placeholder="Enter rollno.  " name="rollno" required>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <label><b>Department</b></label>
+    </td>
+    <td>
+      <select id="s1" name="dept">
+        <option value="" selected>--select--</option>
+        <option value="cse">Computer Sceince</option>
+        <option value="eee">Electrical</option>
+        <option value="mec">Mechanical</option>
+      </select>
+
+    </td>
+  </tr>
+
+  </table>  
+  <br/>     
+    <button type="submit">Update</button>
+  </div>
+
+</form>
+</center>

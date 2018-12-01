@@ -1,0 +1,22 @@
+input,select,option{
+    padding: 10px 30px;
+    width: 80%
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+body{
+  background-image: url("/img/col.jpg");
+}
+.container {
+    padding: 16px;
+}

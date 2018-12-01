@@ -1,0 +1,42 @@
+<style>
+ td{
+   padding:10px 30px;
+   }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<link href="/css/login.css" rel="stylesheet" type="text/css"/>
+<center>
+  <img src="/img/8.png" alt="user" width="100" height="100" >
+  <h1>Student Profile</h1></center>
+  <a href="/student/index"><button type="button">Home</button></a>
+<hr/>
+
+<center><h3>Welcome&nbsp;<%= @user.name %> </h3></center>
+<hr/>
+<div class="w3-container">
+  <center>
+  <table cellpadding="10" cellspacing="0">
+  <tr>
+    <td><img src="/img/9.png" alt="user" width="100" height="100"></td>
+    <td><img src="/img/mark.png" alt="user" width="100" height="100"></td>
+    <td><img src="/img/pass.jpg" alt="user" width="100" height="100"></td>
+    <td><img src="/img/feed.jpg" alt="user" width="100" height="100"></td>
+    <td><img src="/img/quest.jpg" alt="user" width="100" height="100"></td>
+    <td><img src="/img/edit.png" alt="user" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td><center><a href="/student/profile">Details</a></center></td>
+    <td><center><a href="/student/mark">Mark</a></center></td>
+    <td><center><a href="/student/chgpass">Change Password</a></center></td>
+    <td><center><a href="/student/feedback">Feedback</a></center></td>
+    <td><center><a href="/student/questbank">Question bank</a></center></td>
+    <td><center><a href="/student/updateprofile">Update profile</a></center></td>
+  </tr>
+ </table>
+  </center>
+</div>
+
+<div align="right">
+  <a href="\college\home"><button type="button">Logout</button></a>
+  </div>
